@@ -51,7 +51,7 @@ const ContactUs = () => {
                   required
                 >
                   <option value="">Select your role</option>
-                  <option value="rto">Australian RTO</option>
+                  <option value="rto">Australian RTO (Registered Training Organisation)</option>
                   <option value="college">Overseas College/University</option>
                   <option value="partner">Overseas Business Partner</option>
                   <option value="student">Student</option>
@@ -140,7 +140,7 @@ const ContactUs = () => {
                   <div className="ml-4">
                     <h4 className="font-medium text-gray-900">Head Office</h4>
                     <p className="text-gray-600 mt-1">
-                      GAMECHANGER APAC GROUP PTY LTD<br />
+                      GameChanger APAC<br />
                       Level 888, 77777 Collins St<br />
                       Melbourne, AUSTRALIA
                     </p>

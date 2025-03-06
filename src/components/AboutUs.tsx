@@ -90,16 +90,6 @@ const AboutUs = () => {
             ))}
           </div>
         </div>
-
-        {/* Mission Statement */}
-        <div className="mt-24 bg-blue-600 rounded-2xl p-12 text-white">
-          <div className="max-w-3xl mx-auto text-center">
-            <h3 className="text-2xl font-semibold mb-6">Our Mission</h3>
-            <p className="text-xl leading-relaxed">
-              To revolutionize sports education and career development in the Asia-Pacific region by creating meaningful connections between Australian expertise and international opportunities.
-            </p>
-          </div>
-        </div>
       </div>
     </section>
   );

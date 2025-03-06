@@ -2,11 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  "GAMECHANGER APAC links Australian RTO to Overseas Colleges, Sporting Clubs for Delivery Partners and Private Potential Students.",
-  "GAMECHANGER APAC for Student Recruitment.",
-  "GAMECHANGER APAC for Occupational Traineeship.",
-  "GAMECHANGER APAC Delivers Accredited and Nonaccredited Programs, and Short Courses.",
-  "GAMECHANGER APAC is looking for Overseas Business Partners."
+  "GameChanger APAC links Australian RTO (Registered Training Organisation) to Overseas Colleges, Sporting Clubs for Delivery Partners and Private Potential Students.",
+  "GameChanger APAC for Student Recruitment.",
+  "GameChanger APAC for Occupational Traineeship.",
+  "GameChanger APAC Delivers Accredited and Nonaccredited Programs, and Short Courses.",
+  "GameChanger APAC is looking for Overseas Business Partners."
 ];
 
 const Slider = () => {

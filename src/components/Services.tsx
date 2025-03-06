@@ -26,9 +26,9 @@ const Services = () => {
             <div className="p-8">
               <GraduationCap className="w-12 h-12 text-blue-600 mb-6" />
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">Education for Successful Careers</h3>
-              <p className="text-gray-600 mb-6">
-                We introduce Australian VET curriculum to overseas colleges under ASQA standards, benefiting RTOs and CRICOS providers.
-              </p>
+              <div className="text-gray-600">
+                We introduce Australian VET curriculum to overseas colleges under ASQA standards, benefiting RTOs (Registered Training Organisations) and CRICOS providers.
+              </div>
               <button
                 onClick={() => setActiveForm('education')}
                 className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700"
@@ -40,7 +40,7 @@ const Services = () => {
               <form onSubmit={handleSubmit} className="bg-gray-50 p-8 border-t">
                 <div className="space-y-4">
                   <div>
-                    <label htmlFor="rtoName" className="block text-sm font-medium text-gray-700">RTO Name</label>
+                    <label htmlFor="rtoName" className="block text-sm font-medium text-gray-700">RTO (Registered Training Organisation) Name</label>
                     <input
                       type="text"
                       id="rtoName"
@@ -49,7 +49,7 @@ const Services = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="rtoNumber" className="block text-sm font-medium text-gray-700">RTO Number</label>
+                    <label htmlFor="rtoNumber" className="block text-sm font-medium text-gray-700">RTO (Registered Training Organisation) Number</label>
                     <input
                       type="text"
                       id="rtoNumber"
