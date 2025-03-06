@@ -27,9 +27,12 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
               Our unique programs are deeply embedded in a sporting environment and are designed to help graduates unlock their full potential and propel them into rewarding careers.
             </p>
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors">
+            <a
+              href="#what-we-do"
+              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors"
+            >
               Learn More
-            </button>
+            </a>
           </div>
         </div>
       </section>
