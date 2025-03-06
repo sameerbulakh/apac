@@ -19,13 +19,13 @@ const Hero = () => {
         {/* Content */}
         <div className="relative h-full flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Transforming Sports Education
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+              We create thrilling career paths
               <br />
-              in the Asia-Pacific
+              for young aspirational people that love sport
             </h1>
-            <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Connecting Australian expertise with international opportunities in sports education and career development.
+            <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+              Our unique programs are deeply embedded in a sporting environment and are designed to help graduates unlock their full potential and propel them into rewarding careers.
             </p>
             <button className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors">
               Learn More

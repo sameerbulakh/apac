@@ -2,11 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const slides = [
-  "GameChanger APAC links Australian RTO (Registered Training Organisation) to Overseas Colleges, Sporting Clubs for Delivery Partners and Private Potential Students.",
-  "GameChanger APAC for Student Recruitment.",
-  "GameChanger APAC for Occupational Traineeship.",
-  "GameChanger APAC Delivers Accredited and Nonaccredited Programs, and Short Courses.",
-  "GameChanger APAC is looking for Overseas Business Partners."
+  "Sport teaches the most sought-after universal skills for successful careers in all professions",
+  "Sport qualifications teach Hard Skills - digital literacy, project management, financial and business acumen, marketing, branding and sales.",
+  "Sport qualifications teach Soft Skills – communication skills, critical thinking and problem solving, adaptability and resilience and leadership and relationship building.",
+  "Sport qualifications provide advanced entry into leading undergraduate programs in Australia.",
+  "Sport creates friendships and networks that will flourish and endure over many years."
 ];
 
 const Slider = () => {
