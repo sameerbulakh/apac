@@ -131,7 +131,7 @@ const ContactUs = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div>
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
               <div className="space-y-6">
@@ -164,14 +164,6 @@ const ContactUs = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="bg-blue-600 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-semibold mb-4">Office Hours</h3>
-              <div className="space-y-2">
-                <p>Monday - Friday: 9:00 AM - 5:00 PM AEST</p>
-                <p>Saturday - Sunday: Closed</p>
               </div>
             </div>
           </div>
