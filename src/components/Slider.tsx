@@ -10,85 +10,79 @@ const slides = [
 ];
 
 const Slider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const [current, setCurrent] = useState(0);
 
-  const changeSlide = useCallback((newIndex: number) => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setCurrentSlide(newIndex);
-    setTimeout(() => setIsAnimating(false), 500);
-  }, [isAnimating]);
+  const next = useCallback(() => {
+    setCurrent((current) => (current === slides.length - 1 ? 0 : current + 1));
+  }, []);
 
-  const nextSlide = useCallback(() => {
-    const newIndex = (currentSlide + 1) % slides.length;
-    changeSlide(newIndex);
-  }, [currentSlide, changeSlide]);
-
-  const prevSlide = () => {
-    const newIndex = (currentSlide - 1 + slides.length) % slides.length;
-    changeSlide(newIndex);
-  };
+  const prev = useCallback(() => {
+    setCurrent((current) => (current === 0 ? slides.length - 1 : current - 1));
+  }, []);
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 5000);
+    const timer = setInterval(next, 5000);
     return () => clearInterval(timer);
-  }, [nextSlide]);
+  }, [next]);
 
   return (
-    <div className="relative bg-white py-16">
+    <section className="bg-gray-50 py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="relative h-64 overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 via-white to-blue-50 shadow-lg">
-          {/* Slide content */}
-          <div className="px-12">
-            {slides.map((slide, index) => (
-              <div
-                key={index}
-                className={`absolute inset-0 flex items-center justify-center p-8 transition-opacity duration-500 ${
-                  currentSlide === index ? 'opacity-100' : 'opacity-0'
-                }`}
-              >
-                <p className="text-2xl text-center text-gray-800 font-medium">
-                  {slide}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          {/* Navigation buttons */}
+        <div className="relative">
+          {/* Navigation Arrows */}
           <button
-            onClick={prevSlide}
-            disabled={isAnimating}
-            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            onClick={prev}
+            className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
             aria-label="Previous slide"
           >
-            <ChevronLeft className="h-6 w-6 text-blue-600" />
+            <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
           <button
-            onClick={nextSlide}
-            disabled={isAnimating}
-            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            onClick={next}
+            className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
             aria-label="Next slide"
           >
-            <ChevronRight className="h-6 w-6 text-blue-600" />
+            <ChevronRight className="w-6 h-6 text-gray-600" />
           </button>
 
-          {/* Indicators */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex space-x-2">
+          {/* Slide Content */}
+          <div className="overflow-hidden px-16">
+            <div
+              className="transition-transform duration-500 ease-in-out"
+              style={{ transform: `translateX(-${current * 100}%)` }}
+            >
+              <div className="flex">
+                {slides.map((text, index) => (
+                  <div
+                    key={index}
+                    className="w-full flex-shrink-0 px-12"
+                    style={{ flex: '0 0 100%' }}
+                  >
+                    <p className="text-xl md:text-2xl text-gray-600 text-center leading-relaxed">
+                      {text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Dots Navigation */}
+          <div className="flex justify-center space-x-2 mt-8">
             {slides.map((_, index) => (
               <button
                 key={index}
-                onClick={() => changeSlide(index)}
-                disabled={isAnimating}
-                className={`w-2 h-2 rounded-full transition-colors disabled:opacity-50 ${
-                  currentSlide === index ? 'bg-blue-600' : 'bg-gray-200 hover:bg-gray-300'
+                onClick={() => setCurrent(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  index === current ? 'bg-blue-600' : 'bg-gray-300'
                 }`}
+                aria-label={`Go to slide ${index + 1}`}
               />
             ))}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
