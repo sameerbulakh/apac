@@ -3,6 +3,7 @@ import { Users, Award, Globe } from 'lucide-react';
 import Kimon from '../assets/Kimon.png';
 import Raul from '../assets/Raul.png';
 import Judd from '../assets/Judd.png';
+import Guy from '../assets/Guy.png';
 
 const AboutUs = () => {
   const teamMembers = [
@@ -23,6 +24,12 @@ const AboutUs = () => {
       role: "Co-Founder",
       image: Raul,
       bio: "With a focus on international partnerships, Raul drives the expansion of GameChanger APAC's global network."
+    },
+    {
+      name: "Guy Bracher",
+      role: "Executive Advisor",
+      image: Guy,
+      bio: "Guy is an experienced executive, corporate adviser, trainer and CFO with over 40 years' experience. He has a proven track record in working with seed, start-ups and small and medium sized businesses."
     }
   ];
 
@@ -71,7 +78,7 @@ const AboutUs = () => {
         {/* Team Section */}
         <div className="mt-24">
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">Our Leadership Team</h2>
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
                 <div className="aspect-w-3 aspect-h-4">
