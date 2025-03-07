@@ -10,12 +10,12 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', href: '#' },
+    { name: 'What We Do', href: '#what-we-do' },
     { name: 'Our Services', href: '#services' },
     { name: 'Our Courses', href: '#courses' },
     { name: 'About Us', href: '#about' },
     { name: 'Our Network', href: '#network' },
-    { name: 'Contact Us', href: '#contact' },
-    { name: 'Client Area', href: '#client-area' },
+    { name: 'Contact Us', href: '#contact' }
   ];
 
   const toggleMenu = () => {
