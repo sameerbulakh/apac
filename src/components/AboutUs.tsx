@@ -14,22 +14,22 @@ const AboutUs = () => {
       bio: "With a passion for Australian multicultural success, Kimon leads GameChanger APAC in leveraging world-class sport and educational programs."
     },
     {
-      name: "Judd",
+      name: "Judd Dileshwar",
       role: "Co-Founder",
       image: Judd,
       bio: "Bringing extensive experience in sports management and education, Judd helps shape the future of sports education in the APAC region."
     },
     {
-      name: "Raul",
+      name: "Raul V Hernandez",
       role: "Co-Founder",
       image: Raul,
       bio: "With a focus on international partnerships, Raul drives the expansion of GameChanger APAC's global network."
     },
     {
       name: "Guy Bracher",
-      role: "Executive Advisor",
+      role: "Co-Founder",
       image: Guy,
-      bio: "Guy is an experienced executive, corporate adviser, trainer and CFO with over 40 years' experience. He has a proven track record in working with seed, start-ups and small and medium sized businesses."
+      bio: "Guy is an experienced executive, corporate adviser, trainer and CFO with over 40 years' experience."
     }
   ];
 
