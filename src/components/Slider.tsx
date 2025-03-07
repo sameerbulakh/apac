@@ -32,21 +32,21 @@ const Slider = () => {
           {/* Navigation Arrows */}
           <button
             onClick={prev}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            className="absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-6 h-6 text-gray-600" />
           </button>
           <button
             onClick={next}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            className="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
             aria-label="Next slide"
           >
             <ChevronRight className="w-6 h-6 text-gray-600" />
           </button>
 
           {/* Slide Content */}
-          <div className="overflow-hidden px-16">
+          <div className="overflow-hidden px-24">
             <div
               className="transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${current * 100}%)` }}
@@ -55,7 +55,7 @@ const Slider = () => {
                 {slides.map((text, index) => (
                   <div
                     key={index}
-                    className="w-full flex-shrink-0 px-12"
+                    className="w-full flex-shrink-0 px-16"
                     style={{ flex: '0 0 100%' }}
                   >
                     <p className="text-xl md:text-2xl text-gray-600 text-center leading-relaxed">
