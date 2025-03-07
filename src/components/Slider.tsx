@@ -58,7 +58,7 @@ const Slider = () => {
                     className="w-full flex-shrink-0 px-16"
                     style={{ flex: '0 0 100%' }}
                   >
-                    <p className="text-xl md:text-2xl text-gray-600 text-center leading-relaxed">
+                    <p className="text-xl md:text-2xl text-gray-600 text-center leading-relaxed italic">
                       {text}
                     </p>
                   </div>
