@@ -40,31 +40,35 @@ const Slider = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative h-64 overflow-hidden rounded-xl bg-gradient-to-br from-blue-50 via-white to-blue-50 shadow-lg">
           {/* Slide content */}
-          {slides.map((slide, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 flex items-center justify-center p-8 transition-opacity duration-500 ${
-                currentSlide === index ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <p className="text-2xl text-center text-gray-800 font-medium">
-                {slide}
-              </p>
-            </div>
-          ))}
+          <div className="px-12">
+            {slides.map((slide, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 flex items-center justify-center p-8 transition-opacity duration-500 ${
+                  currentSlide === index ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <p className="text-2xl text-center text-gray-800 font-medium">
+                  {slide}
+                </p>
+              </div>
+            ))}
+          </div>
 
           {/* Navigation buttons */}
           <button
             onClick={prevSlide}
             disabled={isAnimating}
-            className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow hover:bg-gray-50 transition-colors border border-gray-100 disabled:opacity-50"
+            className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            aria-label="Previous slide"
           >
             <ChevronLeft className="h-6 w-6 text-blue-600" />
           </button>
           <button
             onClick={nextSlide}
             disabled={isAnimating}
-            className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white shadow hover:bg-gray-50 transition-colors border border-gray-100 disabled:opacity-50"
+            className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors"
+            aria-label="Next slide"
           >
             <ChevronRight className="h-6 w-6 text-blue-600" />
           </button>
