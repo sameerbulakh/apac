@@ -46,7 +46,7 @@ const Slider = () => {
           </button>
 
           {/* Slide Content */}
-          <div className="overflow-hidden px-24">
+          <div className="overflow-hidden px-20">
             <div
               className="transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${current * 100}%)` }}
