@@ -80,7 +80,7 @@ const AboutUs = () => {
           <h2 className="text-3xl font-bold text-gray-900 text-center mb-16">Our Leadership Team</h2>
           <div className="grid md:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden">
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col h-full">
                 <div className="aspect-w-3 aspect-h-4">
                   <img
                     src={member.image}
@@ -88,11 +88,13 @@ const AboutUs = () => {
                     className="w-full h-64 object-cover"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-blue-600 font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600 mb-4">{member.bio}</p>
-                  <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                <div className="p-6 flex flex-col flex-grow">
+                  <div className="flex-grow">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
+                    <p className="text-blue-600 font-medium mb-4">{member.role}</p>
+                    <p className="text-gray-600">{member.bio}</p>
+                  </div>
+                  <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200 mt-4">
                     Learn More
                   </button>
                 </div>
