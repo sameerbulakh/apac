@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, Send } from 'lucide-react';
 
 const ContactUs = () => {
   const [role, setRole] = useState('');
@@ -135,34 +135,17 @@ const ContactUs = () => {
             <div className="bg-gray-50 rounded-2xl p-8">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">Get in Touch</h3>
               <div className="space-y-6">
-                <div className="flex items-start">
-                  <MapPin className="w-6 h-6 text-blue-600 mt-1" />
-                  <div className="ml-4">
-                    <h4 className="font-medium text-gray-900">Head Office</h4>
-                    <p className="text-gray-600 mt-1">
-                      GameChanger APAC<br />
-                      Level 888, 77777 Collins St<br />
-                      Melbourne, AUSTRALIA
-                    </p>
-                  </div>
+                <div className="flex items-center">
+                  <Phone className="w-6 h-6 text-blue-600" />
+                  <a href="tel:+61422444001" className="text-blue-600 hover:text-blue-700 ml-4">
+                    +61 422 444 001
+                  </a>
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 text-blue-600" />
-                  <div className="ml-4">
-                    <h4 className="font-medium text-gray-900">Email</h4>
-                    <a href="mailto:info@gamechangerapac.com.au" className="text-blue-600 hover:text-blue-700">
-                      info@gamechangerapac.com.au
-                    </a>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <Phone className="w-6 h-6 text-blue-600" />
-                  <div className="ml-4">
-                    <h4 className="font-medium text-gray-900">Phone</h4>
-                    <a href="tel:+61422444001" className="text-blue-600 hover:text-blue-700">
-                      +61 422 444 001
-                    </a>
-                  </div>
+                  <a href="mailto:info@gamechangerapac.com.au" className="text-blue-600 hover:text-blue-700 ml-4">
+                    info@gamechangerapac.com.au
+                  </a>
                 </div>
               </div>
             </div>
