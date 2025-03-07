@@ -91,7 +91,10 @@ const AboutUs = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
                   <p className="text-blue-600 font-medium mb-4">{member.role}</p>
-                  <p className="text-gray-600">{member.bio}</p>
+                  <p className="text-gray-600 mb-4">{member.bio}</p>
+                  <button className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                    Learn More
+                  </button>
                 </div>
               </div>
             ))}
