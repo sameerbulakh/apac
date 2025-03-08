@@ -64,3 +64,30 @@ body {
 .mobile-menu-slide.open {
     max-height: 300px;
 }
+
+/* Footer styles */
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    position: relative;
+}
+
+footer a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+footer a:hover:after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
