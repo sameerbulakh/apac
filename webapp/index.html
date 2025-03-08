@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameChanger APAC</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/lucide-static/font/lucide.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+            <div class="w-full py-4 flex items-center justify-between border-b border-blue-500 lg:border-none">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-blue-600">
+                        GameChanger APAC
+                    </a>
+                </div>
+                <div class="hidden lg:flex lg:items-center lg:space-x-6">
+                    <a href="#services" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Our Services</a>
+                    <a href="#courses" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Our Courses</a>
+                    <a href="#about" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">About Us</a>
+                    <a href="#contact-us" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <div class="lg:hidden">
+                    <button type="button" class="text-gray-700 hover:text-blue-600" id="mobile-menu-button">
+                        <span class="sr-only">Toggle menu</span>
+                        <i class="lucide-menu h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile menu -->
+            <div class="lg:hidden py-4 hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-4">
+                    <a href="#services" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Our Services</a>
+                    <a href="#courses" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Our Courses</a>
+                    <a href="#about" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">About Us</a>
+                    <a href="#contact-us" class="text-base font-medium text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 pb-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-8">
+                    We create thrilling career paths for young aspirational people that love sport
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    Join us in shaping the future of sports education and career development
+                </p>
+                <a href="#what-we-do" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+                    Learn More
+                </a>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section id="what-we-do" class="py-16 bg-gray-50">
+            <!-- Content will be loaded via JavaScript -->
+        </section>
+
+        <!-- Slider Section -->
+        <section class="bg-gray-50 py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="relative">
+                    <div class="overflow-hidden px-20">
+                        <div id="slider-container" class="transition-transform duration-500">
+                            <!-- Slides will be loaded via JavaScript -->
+                        </div>
+                    </div>
+                    <button id="prev-slide" class="absolute -left-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+                        <i class="lucide-chevron-left w-6 h-6 text-gray-600"></i>
+                    </button>
+                    <button id="next-slide" class="absolute -right-6 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white p-2 rounded-full shadow-lg transition-colors">
+                        <i class="lucide-chevron-right w-6 h-6 text-gray-600"></i>
+                    </button>
+                    <div id="slider-dots" class="flex justify-center space-x-2 mt-8">
+                        <!-- Dots will be added via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-white">
+            <!-- Content will be loaded via JavaScript -->
+        </section>
+
+        <!-- Our Courses Section -->
+        <section id="courses" class="py-24 bg-gray-50">
+            <!-- Content will be loaded via JavaScript -->
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-24 bg-white">
+            <!-- Content will be loaded via JavaScript -->
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact-us" class="py-24 bg-gray-50">
+            <!-- Content will be loaded via JavaScript -->
+        </section>
+    </main>
+
+    <!-- Modal Template -->
+    <div id="modal" class="fixed inset-0 z-50 overflow-y-auto hidden">
+        <div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity"></div>
+        <div class="flex items-center justify-center min-h-screen p-4">
+            <div class="relative bg-white rounded-xl max-w-2xl w-full mx-auto p-8 overflow-y-auto max-h-[90vh]">
+                <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition-colors" id="modal-close">
+                    <i class="lucide-x w-6 h-6"></i>
+                </button>
+                <div id="modal-content">
+                    <!-- Modal content will be loaded via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

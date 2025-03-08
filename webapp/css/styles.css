@@ -1,0 +1,66 @@
+/* Custom styles to complement Tailwind */
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header adjustments */
+body {
+    padding-top: 64px; /* Height of fixed header */
+}
+
+/* Slider animations */
+.slide-transition {
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Modal animations */
+.modal-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-slide-in {
+    animation: slideIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Team member card hover effects */
+.team-member-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom prose styles for modal content */
+.prose {
+    max-width: 65ch;
+    line-height: 1.6;
+}
+
+.prose p {
+    margin-bottom: 1.25em;
+}
+
+/* Mobile menu animation */
+.mobile-menu-slide {
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.mobile-menu-slide.open {
+    max-height: 300px;
+}
