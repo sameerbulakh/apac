@@ -29,12 +29,12 @@ const Services = () => {
               <div className="text-gray-600">
                 We introduce Australian VET curriculum to overseas colleges under ASQA standards, benefiting RTOs (Registered Training Organisations) and CRICOS providers.
               </div>
-              <button
-                onClick={() => setActiveForm('education')}
+              <a
+                href="#contact"
                 className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700"
               >
                 Learn More <Send className="w-4 h-4 ml-2" />
-              </button>
+              </a>
             </div>
             {activeForm === 'education' && (
               <form onSubmit={handleSubmit} className="bg-gray-50 p-8 border-t">
@@ -85,12 +85,12 @@ const Services = () => {
               <p className="text-gray-600 mb-6">
                 Occupational Traineeship opportunities under Australian Visa Sub-Class 407, with three types of training programs.
               </p>
-              <button
-                onClick={() => setActiveForm('traineeships')}
+              <a
+                href="#contact"
                 className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700"
               >
                 Learn More <Send className="w-4 h-4 ml-2" />
-              </button>
+              </a>
             </div>
             {activeForm === 'traineeships' && (
               <form onSubmit={handleSubmit} className="bg-gray-50 p-8 border-t">
@@ -178,12 +178,12 @@ const Services = () => {
               <p className="text-gray-600 mb-6">
                 Connect with qualified candidates and explore partnership opportunities in the sports industry.
               </p>
-              <button
-                onClick={() => setActiveForm('partnerships')}
+              <a
+                href="#contact"
                 className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700"
               >
                 Learn More <Send className="w-4 h-4 ml-2" />
-              </button>
+              </a>
             </div>
             {activeForm === 'partnerships' && (
               <form onSubmit={handleSubmit} className="bg-gray-50 p-8 border-t">
