@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Users, Award, Globe } from 'lucide-react';
+import { Target, Users, Award, Globe } from 'lucide-react';
 import Kimon from '../assets/Kimon.png';
 import Raul from '../assets/Raul.png';
 import Judd from '../assets/Judd.png';
@@ -8,6 +8,24 @@ import Modal from './Modal';
 
 const AboutUs = () => {
   const [selectedMember, setSelectedMember] = useState<number | null>(null);
+
+  const values = [
+    {
+      icon: <Target className="w-6 h-6 text-blue-600" />,
+      title: "Vision",
+      description: "To be the leading facilitator of sports education and career development in the Asia-Pacific region."
+    },
+    {
+      icon: <Users className="w-6 h-6 text-blue-600" />,
+      title: "Values",
+      description: "Excellence, integrity, and innovation in everything we do to serve our partners and students."
+    },
+    {
+      icon: <Award className="w-6 h-6 text-blue-600" />,
+      title: "Impact",
+      description: "Creating lasting positive change in the sports industry through education and career development."
+    }
+  ];
 
   const teamMembers = [
     {
@@ -59,41 +77,23 @@ Guy holds a Diploma of Business, Graduate Diploma of Law, and is a Fellow of Cha
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Story Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Story</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Founded on the principles of excellence and innovation in sports education, GameChanger APAC has become a leading force in transforming the sports industry across the Asia-Pacific region.
+          <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">Our Story</h2>
+          <p className="mt-4 text-xl text-gray-600 max-w-3xl mx-auto">
+            Founded on the principles of sport being an exceptional teacher, GameChanger APAC leads the transformation of learning across the Asia Pacific sports industry.
           </p>
         </div>
 
         {/* Values */}
-        <div className="grid md:grid-cols-3 gap-12 mb-20">
-          <div className="text-center">
-            <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Globe className="w-8 h-8 text-blue-600" />
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {values.map((value, index) => (
+            <div key={index} className="text-center">
+              <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                {value.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h3>
+              <p className="text-gray-600">{value.description}</p>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Vision</h3>
-            <p className="text-gray-600">
-              Connecting Australian excellence with international opportunities in sports education and development.
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-blue-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Community Focus</h3>
-            <p className="text-gray-600">
-              Building strong networks of educators, sports professionals, and industry partners.
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Award className="w-8 h-8 text-blue-600" />
-            </div>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">Excellence</h3>
-            <p className="text-gray-600">
-              Delivering world-class educational programs and career pathways in sports.
-            </p>
-          </div>
+          ))}
         </div>
 
         {/* Team Section */}
