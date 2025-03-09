@@ -2,25 +2,21 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
-import Slider from './components/Slider';
-import Services from './components/Services';
-import OurCourses from './components/OurCourses';
+import HowWeDoIt from './components/HowWeDoIt';
+import OurMission from './components/OurMission';
 import AboutUs from './components/AboutUs';
-import OurNetwork from './components/OurNetwork';
 import ContactUs from './components/ContactUs';
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <Header />
       <main>
         <Hero />
+        <OurMission />
         <WhatWeDo />
-        <Slider />
-        <Services />
-        <OurCourses />
+        <HowWeDoIt />
         <AboutUs />
-        <OurNetwork />
         <ContactUs />
       </main>
     </div>
