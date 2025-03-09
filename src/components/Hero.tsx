@@ -10,27 +10,27 @@ const Hero = () => {
         <div className="absolute inset-0">
           <img 
             src={stadium} 
-            alt="Stadium" 
+            alt="Sports education" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/60"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
 
         {/* Content */}
         <div className="relative h-full flex items-center justify-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight">
               We create thrilling career paths<br />
               for aspirational young people<br />
               that love sport.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-blue-100">
+            <p className="mt-6 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">
               Our specialized programs are seamlessly integrated into the sporting environment, empowering graduates to unlock their full potential and launch successful, lifelong careers.
             </p>
             <div className="mt-10">
               <a
                 href="#what-we-do"
-                className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors"
+                className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-blue-700 transition-colors duration-200"
               >
                 Learn More
               </a>
