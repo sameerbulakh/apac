@@ -1,37 +1,22 @@
 import React from 'react';
-import { Building2, GraduationCap, Handshake, Globe2, Users2 } from 'lucide-react';
+import { TrendingUp, Users, Globe, Building2, GraduationCap, Handshake, Globe2, Users2 } from 'lucide-react';
 
 const OurNetwork = () => {
-  const networkCategories = [
+  const benefits = [
     {
-      title: "Educational Institutions",
-      icon: <GraduationCap className="w-8 h-8 text-blue-600" />,
-      partners: [
-        "Australian Sports Academy",
-        "Melbourne Institute of Sport",
-        "Sydney Sports College",
-        "Queensland Sports University"
-      ]
+      icon: <TrendingUp className="w-8 h-8 text-blue-600" />,
+      title: "New Business Revenues",
+      description: "Create additional revenue streams through education and training programs."
     },
     {
-      title: "Sports Organizations",
-      icon: <Users2 className="w-8 h-8 text-blue-600" />,
-      partners: [
-        "National Sports Federation",
-        "Regional Sports Councils",
-        "Professional Sports Clubs",
-        "Youth Sports Academies"
-      ]
+      icon: <Users className="w-8 h-8 text-blue-600" />,
+      title: "Capacity Building & Career paths",
+      description: "Develop your workforce and create clear progression pathways."
     },
     {
-      title: "Industry Partners",
-      icon: <Building2 className="w-8 h-8 text-blue-600" />,
-      partners: [
-        "Sports Technology Companies",
-        "Health & Wellness Centers",
-        "Sports Equipment Manufacturers",
-        "Sports Medicine Clinics"
-      ]
+      icon: <Globe className="w-8 h-8 text-blue-600" />,
+      title: "Local & Regional Growth",
+      description: "Expand your reach and influence across the Asia-Pacific region."
     }
   ];
 
@@ -74,20 +59,13 @@ const OurNetwork = () => {
 
         {/* Network Categories */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          {networkCategories.map((category, index) => (
+          {benefits.map((benefit, index) => (
             <div key={index} className="bg-white rounded-xl shadow-lg p-8">
-              <div className="flex items-center mb-6">
-                {category.icon}
-                <h3 className="text-xl font-semibold text-gray-900 ml-4">{category.title}</h3>
+              <div className="flex items-center justify-center w-16 h-16 mb-6 rounded-full bg-blue-50">
+                {benefit.icon}
               </div>
-              <ul className="space-y-4">
-                {category.partners.map((partner, pIndex) => (
-                  <li key={pIndex} className="flex items-center text-gray-600">
-                    <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                    {partner}
-                  </li>
-                ))}
-              </ul>
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">{benefit.title}</h3>
+              <p className="text-gray-600">{benefit.description}</p>
             </div>
           ))}
         </div>
@@ -103,16 +81,16 @@ const OurNetwork = () => {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <p className="text-blue-100">Active Partners</p>
+              <div className="text-4xl font-bold mb-2">20+</div>
+              <p className="text-blue-100">Partner Organizations</p>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold mb-2">6</div>
+              <div className="text-4xl font-bold mb-2">5</div>
               <p className="text-blue-100">Countries</p>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold mb-2">1000+</div>
-              <p className="text-blue-100">Success Stories</p>
+              <p className="text-blue-100">Students Enrolled</p>
             </div>
           </div>
         </div>
