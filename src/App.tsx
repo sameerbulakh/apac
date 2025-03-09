@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
 import HowWeDoIt from './components/HowWeDoIt';
 import Slider from './components/Slider';
+import Services from './components/Services';
 import OurCourses from './components/OurCourses';
 import OurNetwork from './components/OurNetwork';
 import AboutUs from './components/AboutUs';
@@ -19,6 +20,7 @@ function App() {
         <WhatWeDo />
         <HowWeDoIt />
         <Slider />
+        <Services />
         <OurCourses />
         <OurNetwork />
         <AboutUs />
