@@ -33,7 +33,7 @@ const WhatWeDo = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">What We Do</h2>
             <p className="mt-4 text-xl text-gray-600">
-              Empowering the next generation of sports industry professionals
+              We embed world-class Australian education programs within leading sporting organisations, to produce graduates with confidence and differentiated skills, pathways and networks to succeed.
             </p>
           </div>
 
