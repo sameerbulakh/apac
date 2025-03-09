@@ -25,7 +25,7 @@ const Hero = () => {
               that love sport.
             </h1>
             <p className="mt-6 text-lg leading-8 text-blue-100">
-              Discover world-class sports education programs and exciting career opportunities in the thriving sports industry.
+              Our specialized programs are seamlessly integrated into the sporting environment, empowering graduates to unlock their full potential and launch successful, lifelong careers.
             </p>
             <div className="mt-10">
               <a
