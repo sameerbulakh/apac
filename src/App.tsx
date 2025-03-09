@@ -6,8 +6,8 @@ import HowWeDoIt from './components/HowWeDoIt';
 import Slider from './components/Slider';
 import Services from './components/Services';
 import OurCourses from './components/OurCourses';
-import OurNetwork from './components/OurNetwork';
 import AboutUs from './components/AboutUs';
+import OurNetwork from './components/OurNetwork';
 import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 
@@ -22,8 +22,8 @@ function App() {
         <Slider />
         <Services />
         <OurCourses />
-        <OurNetwork />
         <AboutUs />
+        <OurNetwork />
         <ContactUs />
       </main>
       <Footer />
