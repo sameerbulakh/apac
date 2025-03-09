@@ -1,5 +1,4 @@
 import React from 'react';
-import stadium from '../assets/stadium.jpeg';
 
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src={stadium} 
+            src="/images/stadium.jpeg" 
             alt="Sports education" 
             className="w-full h-full object-cover"
           />
