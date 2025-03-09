@@ -5,16 +5,14 @@ const WhatWeDo = () => {
   return (
     <>
       {/* What We Do Section */}
-      <section className="bg-white py-16" id="what-we-do">
+      <section className="py-16 bg-gray-50" id="what-we-do">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-8">
-            What We Do
-          </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto text-center leading-relaxed">
-            We transfer the unique model that has been successfully operating through Australia for two decades.
-            We embed world-class Australian education programs within leading Asia Pacific sporting
-            organisations, to produce graduates with differentiated skills, pathways and networks to succeed.
-          </p>
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">What We Do</h2>
+            <p className="text-xl leading-relaxed text-gray-600">
+              We embed world-class Australian education programs within leading sporting organisations, to produce graduates with confidence and differentiated skills, pathways and networks to succeed.
+            </p>
+          </div>
         </div>
       </section>
 
