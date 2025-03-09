@@ -4,17 +4,17 @@ import { TrendingUp, Users, Globe } from 'lucide-react';
 const OurNetwork = () => {
   const benefits = [
     {
-      icon: <TrendingUp className="w-8 h-8 text-blue-600" />,
+      icon: <TrendingUp className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />,
       title: "New Business Revenues",
       description: "Create additional revenue streams through education and training programs."
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
+      icon: <Users className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />,
       title: "Capacity Building & Career paths",
       description: "Develop your workforce and create clear progression pathways."
     },
     {
-      icon: <Globe className="w-8 h-8 text-blue-600" />,
+      icon: <Globe className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />,
       title: "Local & Regional Growth",
       description: "Expand your reach and influence across the Asia-Pacific region."
     }
@@ -30,7 +30,7 @@ const OurNetwork = () => {
               A thriving ecosystem of educational institutions, sports organizations, and industry partners working together to create opportunities in sports and education. Headquartered in Melbourne, Australia, our initial non-exclusive Asia Pacific partnerships provide in-market presence to the countries below. We are also seeking limited additional partners throughout the region.
             </p>
             <p className="text-xl text-blue-600 hover:text-blue-700 transition-colors">
-              <a href="#contact-us">Please contact us to enquire further.</a>
+              <a href="#contact">Please contact us to enquire further.</a>
             </p>
           </div>
         </div>
