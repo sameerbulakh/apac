@@ -1,27 +1,27 @@
 import React from 'react';
-import { Target, Users, Award, Network } from 'lucide-react';
+import { Target, Lightbulb, Award, Network } from 'lucide-react';
 
 const WhatWeDo = () => {
   const features = [
     {
       icon: <Target className="w-8 h-8 text-blue-600" />,
-      title: "Our Mission",
-      description: "To revolutionize career development in the Asia-Pacific by leveraging Australian sporting and educational expertise."
+      title: "Mission Driven",
+      description: "Focussed on creating meaningful impacts through sport."
     },
     {
-      icon: <Users className="w-8 h-8 text-blue-600" />,
-      title: "Our Network",
-      description: "We connect with leading sports organizations, educational institutions, and industry partners across the Asia-Pacific region."
+      icon: <Lightbulb className="w-8 h-8 text-blue-600" />,
+      title: "Innovation",
+      description: "Combining valued workplace education and training with industry partnerships."
     },
     {
       icon: <Award className="w-8 h-8 text-blue-600" />,
-      title: "Our Programs",
-      description: "Internationally recognized qualifications that combine sports education with practical industry experience."
+      title: "Proven Results",
+      description: "Building on track record of success over many years in Australia."
     },
     {
       icon: <Network className="w-8 h-8 text-blue-600" />,
-      title: "Our Ecosystem",
-      description: "A comprehensive support system that nurtures talent and facilitates seamless transitions into rewarding careers."
+      title: "Network Ecosystem",
+      description: "Driving partnerships, trade and people-to-people links across Asia Pacific."
     }
   ];
 
