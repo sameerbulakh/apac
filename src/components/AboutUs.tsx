@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 import { Target, Users, Award, Globe } from 'lucide-react';
-import Kimon from '../assets/Kimon.png';
-import Raul from '../assets/Raul.png';
-import Judd from '../assets/Judd.png';
-import Guy from '../assets/Guy.png';
 import Modal from './Modal';
 
 const AboutUs = () => {
@@ -31,7 +27,7 @@ const AboutUs = () => {
     {
       name: "Kimon Taliadoros",
       role: "Founder",
-      image: Kimon,
+      image: "/images/Kimon.png",
       bio: "With a passion for Australian multicultural success, Kimon leads GameChanger APAC in leveraging world-class sport and educational programs.",
       fullBio: `Kimon has occupied leadership roles throughout his life, most recently as Founder of GameChanger APAC, with a mission of sharing Australian sports education with our Asia Pacific friends. Kimon served as Chairman and CEO of Football Victoria, Co-founder of the Professional Footballers Australia and a Socceroo, as well as a coach, commentator and analyst.
 
@@ -40,7 +36,7 @@ Kimon also brings a wealth of experience from a diverse career background in non
     {
       name: "Judd Dileshwar",
       role: "Co-Founder",
-      image: Judd,
+      image: "/images/Judd.png",
       bio: "Bringing extensive experience in sports management and education, Judd helps shape the future of sports education in the APAC region.",
       fullBio: `Judd is qualified Accountant, experienced businessman, serial entrepreneur, educationist and business advisor. He has over 30 years local and international experience in Education and Training, Finance, Accounting, Tax, Auditing, Management, Business Advisory / Solutions, Mergers & Acquisitions.
 
@@ -51,7 +47,7 @@ Judd has a deep interest in sports, social and educational development and is no
     {
       name: "Raul V Hernandez",
       role: "Co-Founder",
-      image: Raul,
+      image: "/images/Raul.png",
       bio: "With a focus on international partnerships, Raul drives the expansion of GameChanger APAC's global network.",
       fullBio: `Raul V Hernandez has dedicated his career in Vocational Education. He has been CEO of various Vocation Education Providers in Australia referred to as RTO (Registered Training Organisations) for more than a decade. His advocacy is to promote the importance of Vocational Education specially in the Asia Pacific region.
 
@@ -60,7 +56,7 @@ He is also the Founder of Philippine Australian Committee on Education (PACE) as
     {
       name: "Guy Bracher",
       role: "Co-Founder",
-      image: Guy,
+      image: "/images/Guy.png",
       bio: "Guy is an experienced executive, corporate adviser, trainer and CFO with over 40 years' experience.",
       fullBio: `Guy specialises in Technology Commercialisation. He is an experienced executive, corporate adviser, trainer and CFO with over 40 years' experience. He has a proven track record in working with seed, start-ups and small and medium sized businesses, both as a consultant, corporate finance adviser and as a Virtual Chief Financial Officer.
 

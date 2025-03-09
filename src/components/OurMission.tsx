@@ -7,7 +7,7 @@ const OurMission = () => {
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
           <p className="text-xl leading-relaxed text-gray-600">
-            To revolutionize career development in the Asia-Pacific by leveraging Australian sporting and educational expertise.
+            To revolutionize sports education and career development in the Asia-Pacific region by creating meaningful connections between Australian expertise and international opportunities.
           </p>
         </div>
       </div>
