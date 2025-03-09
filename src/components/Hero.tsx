@@ -19,20 +19,22 @@ const Hero = () => {
         {/* Content */}
         <div className="relative h-full flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-              We create thrilling career paths
-              <br />
-              for young aspirational people that love sport
+            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+              We create thrilling career paths<br />
+              for aspirational young people<br />
+              that love sport.
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Our unique programs are deeply embedded in a sporting environment and are designed to help graduates unlock their full potential and propel them into rewarding careers.
+            <p className="mt-6 text-lg leading-8 text-blue-100">
+              Discover world-class sports education programs and exciting career opportunities in the thriving sports industry.
             </p>
-            <a
-              href="#what-we-do"
-              className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors"
-            >
-              Learn More
-            </a>
+            <div className="mt-10">
+              <a
+                href="#what-we-do"
+                className="inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-50 transition-colors"
+              >
+                Learn More
+              </a>
+            </div>
           </div>
         </div>
       </section>
