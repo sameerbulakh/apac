@@ -3,9 +3,10 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import WhatWeDo from './components/WhatWeDo';
 import HowWeDoIt from './components/HowWeDoIt';
-import OurMission from './components/OurMission';
+import OurNetwork from './components/OurNetwork';
 import AboutUs from './components/AboutUs';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -13,12 +14,13 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <OurMission />
         <WhatWeDo />
         <HowWeDoIt />
+        <OurNetwork />
         <AboutUs />
         <ContactUs />
       </main>
+      <Footer />
     </div>
   );
 }
