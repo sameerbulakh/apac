@@ -37,6 +37,11 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href="#privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+                  Privacy Policy & Disclaimer
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -52,7 +57,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} GameChanger APAC. All rights reserved.</p>
+          <p> {new Date().getFullYear()} GameChanger APAC. All rights reserved.</p>
         </div>
       </div>
     </footer>
