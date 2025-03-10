@@ -2,6 +2,17 @@ import React from 'react';
 import { TrendingUp, Users, Globe } from 'lucide-react';
 
 const OurNetwork = () => {
+  const countries = [
+    { name: 'Singapore', code: 'SG' },
+    { name: 'Malaysia', code: 'MY' },
+    { name: 'India', code: 'IN' },
+    { name: 'Indonesia', code: 'ID' },
+    { name: 'Philippines', code: 'PH' },
+    { name: 'Fiji', code: 'FJ' },
+    { name: 'Sri Lanka', code: 'LK' },
+    { name: 'Dubai/UAE', code: 'AE' }
+  ];
+
   const benefits = [
     {
       icon: <TrendingUp className="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform" />,
@@ -29,7 +40,26 @@ const OurNetwork = () => {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto">
               A thriving ecosystem of educational institutions, sports organizations, and industry partners working together to create opportunities in sports and education. Headquartered in Melbourne, Australia, our initial non-exclusive Asia Pacific partnerships provide in-market presence to the countries below. We are also seeking limited additional partners throughout the region.
             </p>
-            <p className="text-xl text-blue-600 hover:text-blue-700 transition-colors">
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+              {countries.map((country) => (
+                <div 
+                  key={country.code}
+                  className="group flex items-center justify-center p-4 bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className="flex items-center space-x-3">
+                    <img
+                      src={`https://flagcdn.com/48x36/${country.code.toLowerCase()}.png`}
+                      alt={`${country.name} flag`}
+                      className="w-8 h-6 rounded shadow-sm"
+                    />
+                    <span className="text-gray-900 font-medium group-hover:text-blue-600 transition-colors">
+                      {country.name}
+                    </span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <p className="text-xl text-blue-600 hover:text-blue-700 transition-colors mt-8">
               <a href="#contact">Please contact us to enquire further.</a>
             </p>
           </div>
