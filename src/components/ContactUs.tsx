@@ -120,6 +120,13 @@ const ContactUs = () => {
                 />
               </div>
 
+              <div className="mt-4 text-gray-600">
+                Or email us at:
+                <a href="mailto:info@GameChangerAPAC.com.au" className="text-blue-600 hover:text-blue-700 ml-4">
+                  info@GameChangerAPAC.com.au
+                </a>
+              </div>
+
               <button
                 type="submit"
                 className="w-full bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 transition-colors flex items-center justify-center"
@@ -143,8 +150,8 @@ const ContactUs = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-6 h-6 text-blue-600" />
-                  <a href="mailto:info@gamechangerapac.com.au" className="text-blue-600 hover:text-blue-700 ml-4">
-                    info@gamechangerapac.com.au
+                  <a href="mailto:info@GameChangerAPAC.com.au" className="text-blue-600 hover:text-blue-700 ml-4">
+                    info@GameChangerAPAC.com.au
                   </a>
                 </div>
               </div>

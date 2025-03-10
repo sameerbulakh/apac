@@ -49,7 +49,8 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: info@gamechangerapac.com</li>
+              <li>Melbourne, Australia</li>
+              <li>Email: info@GameChangerAPAC.com.au</li>
               <li>Phone: +61 3 9123 4567</li>
             </ul>
           </div>
